@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Multimedia</title>
+  </head>
+  <body>
+    <figure>
+      <img
+        src="cat.png"
+        alt="cat picture"
+        srcset="cat.png 200w, cat.png 600w"
+        sizes="(max-width: 600px) 200px, 600px"
+        title="This cat is mad"
+      />
+      <figcaption>This is my cat</figcaption>
+    </figure>
+    <video src="earth.mp4" controls>
+      <p>You browser does not support video</p>
+    </video>
+    <video controls>
+      <source src="earth.mp4" type="video/mp4" />
+      <source src="earth.webm" type="video/webm" />
+      <p>This is fallback</p>
+    </video>
+    <video
+      src="earth.mp4"
+      controls
+      autoplay
+      loop
+      muted
+      preload="auto"
+      width="300px"
+      height=""
+    ></video>
+    <audio controls autoplay muted>
+      <source src="sound_mp3.mp3" type="audio/mp3" />
+      <p>Some problem</p>
+    </audio>
+    <iframe
+      width="427"
+      height="240"
+      src="https://www.youtube.com/embed/MLpWrANjFbI"
+      title="Elementor video placeholder"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen
+    ></iframe>
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2692.7303415535016!2d-122.28269548496627!3d47.55357679963343!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54906a0f61d95ad3%3A0x7561bf6c0145dab3!2s5303%20Rainier%20Ave%20S%20d%2C%20Seattle%2C%20WA%2098118%2C%20USA!5e0!3m2!1sen!2set!4v1657959568936!5m2!1sen!2set"
+      width="600"
+      height="450"
+      style="border: 0"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+    ></iframe>
+  </body>
+</html>
